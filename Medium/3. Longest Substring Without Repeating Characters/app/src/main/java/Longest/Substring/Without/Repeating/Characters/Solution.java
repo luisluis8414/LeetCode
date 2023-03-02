@@ -8,7 +8,7 @@ import java.util.Map;
 
 class Solution {
     public int lengthOfLongestSubstring(String s) {
-        if(s.length()==0)return 0;
+        // if(s.length()==0)return 0;//Falls leerer String uebergeben wird
         
         Map<Character, Integer> chars=new HashMap<>();
         char[] charArr=s.toCharArray();
@@ -19,17 +19,17 @@ class Solution {
             char c=charArr[i];
             if(chars.containsKey(c)&&chars.get(c)>=start)
             {
-                start=chars.get(c);
+                start=chars.get(c);//Start Wert wird auf index des ersten doppelten Chars gesetzt
             }
             chars.put(c, i);
-            max_length=Math.max(max_length, i-start);
+            max_length=Math.max(max_length, i-start);//max_length dann ersetzt, wenn der Index des Elements minus des jetztigen Startelements groesser ist als der alte max Wert
         }
         return max_length;
     }
 
     public static void main(String[] args) {
         Solution s=new Solution();
-        s.lengthOfLongestSubstring("pwwkew");
+        s.lengthOfLongestSubstring("pwwkew");//gibt 3 zurueck, da die laengste Folge einzigartiger Charaktere kew ist und somit 3 Charaktere lang
 
     }
 }

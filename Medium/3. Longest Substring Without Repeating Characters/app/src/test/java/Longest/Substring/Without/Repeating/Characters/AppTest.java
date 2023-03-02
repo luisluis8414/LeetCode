@@ -31,4 +31,9 @@ private Solution solution;
     void test3() {
         assertEquals(3, solution.lengthOfLongestSubstring("pwwkew"));
     }
+
+    @Test
+    void test4() {
+        assertEquals(0, solution.lengthOfLongestSubstring(""));
+    }
 }
