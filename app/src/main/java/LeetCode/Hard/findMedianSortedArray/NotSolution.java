@@ -83,9 +83,4 @@ class NotSolution {
         return -(left + 1);
     }
 
-    public static void main(String[] args) {
-        int[] arr1 = { 1, 2};
-        int[] arr2 = {3, 4};
-        System.out.println(findMedianSortedArrays(arr1, arr2));;
-    }
 }
