@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.BeforeEach;
 
-class LongestSubstring {
+class AppTest {
     private LongestSubstringWithoutRepeatingCharacters s;
     @BeforeEach
     public void init(){

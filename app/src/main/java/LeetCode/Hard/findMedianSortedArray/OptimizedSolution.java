@@ -1,5 +1,5 @@
 package LeetCode.Hard.findMedianSortedArray;
-
+//still not O(log(m+n))
 public class OptimizedSolution {
     public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
 
